@@ -13,12 +13,12 @@ function App() {
   return (
     <>
     <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/product" element={<Productpage/>}/>
-      <Route path="/about"  element={<About/>} />
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/heart" element={<Heart/>}/>
-      <Route path="/basket" element={<Basket/>}/>
+    <Route path={process.env.PUBLIC_URL + '/'} element={<Home/>}/>
+      <Route path={process.env.PUBLIC_URL + '/product'} element={<Productpage/>}/>
+      <Route path={process.env.PUBLIC_URL + '/about'}  element={<About/>} />
+      <Route path={process.env.PUBLIC_URL + '/contact'} element={<Contact/>}/>
+      <Route path={process.env.PUBLIC_URL + '/heart'} element={<Heart/>}/>
+      <Route path={process.env.PUBLIC_URL + '/basket'} element={<Basket/>}/>
     </Routes>
     </>
   );
