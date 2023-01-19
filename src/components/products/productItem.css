@@ -1,0 +1,176 @@
+.col-2{
+    width: 65%;
+}
+
+.product-gallery-container{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.product-gallery{
+    margin-right: auto;
+    display: grid;
+    gap: 3% 5%;
+    grid-template-columns: 1fr 1fr 1fr;  
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    width: 100%;
+    align-content: center;
+    padding: 5vh;
+    margin:0 auto;
+    
+}
+
+.image-product{
+    width: 100%;
+}
+
+.number-products{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    text-align: end;
+    width: 95%;
+}
+
+.sale-red-pill{
+    background-color: red;
+    padding: 1vh;
+    color:white; 
+    border-radius:25vh;
+    position: absolute; 
+    left: 5%;
+    top: 5%;
+}
+
+.new-green-pill{
+    background-color: rgb(55, 116, 55);
+    padding: 1vh;
+    color:white; 
+    border-radius:25vh;
+    position: absolute; 
+    left: 5%;
+    top: 5%;
+}
+
+.onsale-price-line-through{
+    text-decoration: line-through;
+    color: red;
+}
+
+.product-prices-flex-container{
+    display: flex; 
+    gap: 1vh;
+    color: #666;
+}
+
+.product-prices-flex-container>p{
+    margin-top: 1vh;
+}
+
+.product-item-with-text p{
+    margin-top: 1vh;
+    text-transform: uppercase;
+    
+}
+.product-item-bg-pic{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    max-width: 250px;
+}
+.btnhover {
+    background-color: black;
+    color: white;
+    border-radius: 5vh;
+    border: 1px solid black;
+    padding:  1vh;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+}
+
+.hearthover {
+    color: white ;
+    position: absolute; 
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .col-2 {
+        height: 125vh ;
+        margin: auto;
+        margin-top: 60vh;
+        
+    }
+    .product-gallery-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+    }
+
+    .product-item-with-text {
+        margin-left: 1vh; 
+        width: 20vh;
+    }
+    .product-item-with-text p{
+        text-align: center; 
+    }
+    .product-prices-flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr 1fr;
+        height: 30vh;
+        margin-left: 10vh;
+    }
+    .number-products {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 368px) {
+    .col-2 {
+        height: 125vh ;
+        margin-top: 175vh !important;
+        margin-bottom: 100vh;
+        display: grid;
+        justify-content: center;
+        
+    }
+    .product-gallery-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .product-item-with-text p{
+        text-align: center; 
+    }
+
+    .product-prices-flex-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr;
+        margin-right: 10vh;
+    }
+    .number-products {
+        display: none;
+    }
+}
+
+

@@ -1,0 +1,55 @@
+.footer {
+    width: 100%;
+    margin: auto;
+    margin-top: 5vh;
+    padding-top: 5vh;
+    background-color: #F0F0F0;
+}
+
+.touch {
+    text-align: center;
+}
+
+.footer p, h3 {
+    margin: 1vh;
+}
+
+.footer p {
+    color: #788186;
+}
+
+.footer .container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 50% 25% 25%);
+}
+
+.footer .container .col {
+    display: grid;
+    justify-content: center;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.fa {
+    margin: 2vh;
+    color: #788186;
+}
+
+
+@media screen and (max-width: 740px) {
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
