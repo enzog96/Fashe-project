@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Fashe-project/static/css/main.58e779c3.css",
-    "main.js": "/Fashe-project/static/js/main.b2b514e3.js",
+    "main.js": "/Fashe-project/static/js/main.a99b086b.js",
     "static/media/banner-video.mp4": "/Fashe-project/static/media/banner-video.6ab30842509ce20d88e4.mp4",
     "static/media/banner.png": "/Fashe-project/static/media/banner.45f3d6699f4b99096836.png",
     "static/media/coming1.png": "/Fashe-project/static/media/coming1.416b212ea7779c9f6eb2.png",
@@ -14,10 +14,10 @@
     "static/media/general-banner.jpg": "/Fashe-project/static/media/general-banner.fbf4cb7f8daa0a8b2eac.jpg",
     "index.html": "/Fashe-project/index.html",
     "main.58e779c3.css.map": "/Fashe-project/static/css/main.58e779c3.css.map",
-    "main.b2b514e3.js.map": "/Fashe-project/static/js/main.b2b514e3.js.map"
+    "main.a99b086b.js.map": "/Fashe-project/static/js/main.a99b086b.js.map"
   },
   "entrypoints": [
     "static/css/main.58e779c3.css",
-    "static/js/main.b2b514e3.js"
+    "static/js/main.a99b086b.js"
   ]
 }
