@@ -26,23 +26,23 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <NavLink to='/'><img src={Logo} alt="" /></NavLink>
+            <NavLink to={process.env.PUBLIC_URL + '/'}><img src={Logo} alt="" /></NavLink>
             <ul className={nav ? 'nav-menu active' : 'nav-menu'}>
                 <li>
-                    <NavLink to='/' style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Home</NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + '/'} style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/product' style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Product</NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + '/product'} style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Product</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/about' style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>About</NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + '/about'} style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>About</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/contact' style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Contact</NavLink>
+                    <NavLink to={process.env.PUBLIC_URL + '/contact'} style={({ isActive }) => (isActive ? {color: 'red'}  : {color: 'black'} )}>Contact</NavLink>
                 </li>
             </ul>
             <div className='logo'>
-                <NavLink to='/heart'>
+                <NavLink to={process.env.PUBLIC_URL + '/heart'}>
                     <AiOutlineHeart className='logo1' size={20} />
                 </NavLink>
                 <p>|</p>
@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             {open && (
                 <div className="container-cart">
-                    <NavLink to='/basket'>
+                    <NavLink to={process.env.PUBLIC_URL + '/basket'}>
                     <table>
                         <tbody>
                         {inbasketlist.map((product)=>(
